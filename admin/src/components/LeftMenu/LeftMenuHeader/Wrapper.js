@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import Logo from '../../../assets/images/logo.svg';
+import Logo from '../../../assets/images/logo_dark.png';
 
 const Wrapper = styled.div`
   padding-left: 2rem;
@@ -26,6 +26,7 @@ const Wrapper = styled.div`
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
+    background-size: 54px;
   }
 `;
 
