@@ -1,8 +1,13 @@
 module.exports = ({ env }) => ({
     upload: {
-      provider: 'web3-storage',
+      provider: 'aws-s3',
       providerOptions: {
-        apiKey: env('WEB3_STORAGE_API_KEY')
+        accessKeyId: env('AWS_ACCESS_KEY_ID'),
+        secretAccessKey: env('AWS_ACCESS_SECRET'),
+        region: env('AWS_REGION'),
+        params: {
+          Bucket: env('AWS_BUCKET_NAME'),
+        },
       },
     },
     email: {
